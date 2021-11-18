@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SearchCell" customModule="CompositionalLayout_Final" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="267" height="108"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="267" height="108"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqv-rX-CHS">
+                        <rect key="frame" x="0.0" y="0.0" width="267" height="37"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ohv-Da-XEk">
+                        <rect key="frame" x="0.0" y="57" width="267" height="51"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </searchBar>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="yqv-rX-CHS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" symbolic="YES" id="AWX-ke-P2e"/>
+                <constraint firstItem="ohv-Da-XEk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Y3f-5M-2lk"/>
+                <constraint firstAttribute="trailing" secondItem="yqv-rX-CHS" secondAttribute="trailing" symbolic="YES" id="Zkt-Qs-6m3"/>
+                <constraint firstAttribute="trailing" secondItem="ohv-Da-XEk" secondAttribute="trailing" id="ktS-Wd-Hio"/>
+                <constraint firstItem="yqv-rX-CHS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" symbolic="YES" id="wH4-PR-3vo"/>
+                <constraint firstAttribute="bottom" secondItem="ohv-Da-XEk" secondAttribute="bottom" id="yKj-Ff-n8I"/>
+                <constraint firstItem="ohv-Da-XEk" firstAttribute="top" secondItem="yqv-rX-CHS" secondAttribute="bottom" constant="20" id="zVT-Uw-iB8"/>
+            </constraints>
+            <size key="customSize" width="267" height="108"/>
+            <point key="canvasLocation" x="289.13043478260875" y="141.96428571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>

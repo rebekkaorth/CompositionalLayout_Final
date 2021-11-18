@@ -8,6 +8,7 @@
 import Foundation
 
 enum CategoryType: CaseIterable {
+    case search
     case hotAndWorthIt
     case continueWatching
     case fromYourList
@@ -15,6 +16,7 @@ enum CategoryType: CaseIterable {
 
     var name: String {
         switch self {
+            case .search: return ""
             case .hotAndWorthIt: return "Hot & Worth it"
             case .continueWatching: return "Continue watching"
             case .fromYourList: return "From your list"

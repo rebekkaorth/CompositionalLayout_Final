@@ -9,6 +9,15 @@ import Foundation
 import UIKit
 
 struct TestViewModel {
+    static let searchViewModel: CategoryViewModel = CategoryViewModel(
+        headline: TestData.search.type.name,
+        movies: TestData.search.movies.map {
+            MovieCellViewModel(movie: $0)
+        },
+        height: 220,
+        width: UIScreen.main.bounds.width * 0.8
+    )
+
     static let hotAndWorthItViewModel: CategoryViewModel = CategoryViewModel(
         headline: TestData.hotAndWorthIt.type.name,
         movies: TestData.hotAndWorthIt.movies.map {
@@ -47,6 +56,11 @@ struct TestViewModel {
 }
 
 struct TestData {
+    static let search: Category = Category(
+        type: .search,
+        movies: [Movie(title: "Movie-1", imageUrl: "🔥")]
+    )
+
     static let hotAndWorthIt: Category = Category(
         type: .hotAndWorthIt,
         movies: [
